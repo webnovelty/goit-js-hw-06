@@ -9,7 +9,8 @@ const inputEl = document.querySelector('input');
 const buttonCreateEl = document.querySelector('[data-create]');
 const buttonDestroyEl = document.querySelector('[data-destroy]');
 const divEl = document.querySelector('#boxes');
-
+let widthEl = 30;
+let heightEl = 30;
 
 
 buttonCreateEl.addEventListener('click', createCollection);
@@ -25,8 +26,7 @@ function createCollection() {
 
 }
 function createBoxes(amount) {
-	let widthEl = 30;
-	let heightEl = 30;
+
 	const elements = amount.map(option => {
 		const elementLi = document.createElement('div');
 
