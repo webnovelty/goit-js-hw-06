@@ -48,4 +48,6 @@ function createBoxes(amount) {
 function destroyBoxes() {
 	const childDiv = divEl.querySelectorAll('div');
 	for (let element of childDiv) { element.remove() };
+	widthEl = 30;
+	heightEl = 30;
 }
