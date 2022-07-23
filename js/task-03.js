@@ -15,10 +15,7 @@ const images = [
 
 const galleryEl = document.querySelector('.gallery');
 const elements = images.map(option => {
-	const elementLi = document.createElement('li');
-	elementLi.classList.add('gallery__img');
-	elementLi.insertAdjacentHTML('beforeend', `<img src=${option.url} alt=${option.alt}>`);
-	return elementLi;
-});
 
-galleryEl.append(...elements);
+	return `<li><img src=${option.url} alt=${option.alt}></li>`;
+});
+galleryEl.insertAdjacentHTML('beforeend', elements);
